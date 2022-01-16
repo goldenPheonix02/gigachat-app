@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt&family=Sora&family=Ubuntu+Mono&display=swap');
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    padding: 0 10px;
+    background-color: #232323;
+    color: #eee;
+}
+
+.btn {
+    border-radius: 0 3px 3px 0;
+}
+
+.btn:focus,
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.title {
+    margin-top: 2%;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin: 2% 15% 0 10%;
+    column-gap: 0;
+    grid-template-areas: "user chat chat chat chat chat chat";
+}
+
+.container-lol {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.users-bar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.users-bar ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 0;
+    background-color: #DBEDF3;
+    color: #000;
+    border-radius: 0 0 0 3px;
+}
+
+li {
+    padding: 3% 0;
+    border-top: 1px solid #1F4287;
+    overflow: hidden;
+}
+
+li:first-child {
+    border-top: none;
+}
+
+.user-title {
+    border-radius: 3px 0 0px;
+    background-color: #00818A;
+    padding: 5%;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 3px;
+}
+
+.form-control:focus {
+    border-color: #666;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.chat {
+    background-color: #393E46;
+    color: #eee;
+    padding: 20px;
+    min-height: 400px;
+    max-height: 530px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    display: inline;
+    outline: none;
+    width: 85%;
+    border: 2px solid #333;
+    padding: 5px 5px;
+}
+
+.input-container {
+    background: #ddd;
+    padding: 1%;
+}
+
+.input {
+    background: #eee;
+}
+
+.chat-container {
+    display: block;
+    width: 100%;
+}
+
+.lol {
+    padding: 3px 7px;
+    background-color: #787A91;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-right: auto;
+    /* overflow-wrap: break-word; */
+    word-break: break-word;
+    max-width: 40%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.info {
+    font-size: .74em;
+}
+
+.info-self {
+    margin-left: auto;
+    font-size: .74em;
+}
+
+.message {
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.lol-self {
+    padding: 3px 7px;
+    background-color: #0C81F6;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 3px;
+    margin-left: auto;
+    /* overflow-wrap: break-word; */
+    word-break: break-word;
+    max-width: 40%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.notif {
+    margin: 5px auto;
+    background-color: #375FC0;
+    padding: .3% 8px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+@media (max-width:1100px) {
+    .parent {
+        margin: 2% 3% 0 0;
+    }
+}
+
+@media (max-width:900px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        margin: 2% 3% 0 0;
+        column-gap: 0;
+        grid-template-areas: "user chat chat chat chat chat";
+    }
+    .lol-self,
+    .lol {
+        /* word-break: break-all; */
+        /* text-overflow: ellipsis; */
+        max-width: 70%;
+    }
+}
+
+@media (max-width:500px) {
+    .lol-self,
+    .lol {
+        word-break: break-word;
+        max-width: 70%;
+    }
+}

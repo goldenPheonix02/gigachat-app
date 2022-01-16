@@ -1,0 +1,98 @@
+html,
+body {
+    height: 100%;
+    background-color: #232323;
+}
+
+html {
+    overflow: hidden;
+}
+
+h1 {
+    color: #fff;
+}
+
+body {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+main {
+    z-index: 1;
+    background-color: #232323;
+}
+
+.form-signin {
+    /* display: block; */
+    width: 100%;
+    max-width: 330px;
+    border: 1.5px solid #fff;
+    padding: 15px;
+    margin: auto;
+}
+
+#icon {
+    padding-left: .4em;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+form h1 {
+    padding-bottom: 2em;
+}
+
+.top {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.middle {
+    margin-bottom: -1px;
+    border-radius: 0;
+}
+
+.bottom {
+    margin-bottom: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+button {
+    margin-top: 2em;
+}
+
+
+/* sssssssssssssss */
+
+.anime {
+    position: absolute;
+    display: flex;
+    /* margin: auto; */
+    justify-content: space-around;
+    top: 50%;
+    bottom: 50%;
+    text-align: center;
+    /* left: 10%; */
+    margin: auto;
+}
+
+.child {
+    height: 15px;
+    width: 15px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    background-color: crimson;
+    z-index: 0;
+}
