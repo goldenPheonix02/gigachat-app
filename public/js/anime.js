@@ -13,6 +13,7 @@ for (var i = 0; i < 30; i++) {
 
 
 
+
 function randomValues() {
     var elements = document.querySelectorAll('.child');
 
