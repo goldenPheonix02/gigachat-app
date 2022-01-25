@@ -37,7 +37,6 @@ function makeNotifChild(msg, hehe) {
     newDiv.appendChild(newContent);
     newDiv.className += "notif";
     document.querySelector(".chat").appendChild(newDiv);
-    document.querySelector("input").value = "";
     var chatHistory = document.getElementById("chatbox");
     chatHistory.scrollTop = chatHistory.scrollHeight;
 }
